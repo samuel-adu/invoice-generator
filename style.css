@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  color: hsla(234, 22%, 37%, 1);
+}
+
+.container {
+  max-width: 550px;
+  padding-inline: 2rem;
+  margin: 0 auto;
+}
+
+main {
+  padding-block: 2rem;
+}
+
+h1 {
+  color: hsla(250, 18%, 19%, 1);
+  font-size: 40px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #918e9b;
+  margin-bottom: 0.5rem;
+}
+
+small {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #4a4e74;
+}
+
+header {
+  background: hsla(0, 0%, 96%, 1);
+  padding-block: 3rem;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background: #3770ed;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 21px;
+  border-radius: 7px;
+  border: 0;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.task-btn {
+  background-color: #fff;
+  border: 1px solid hsla(255, 5%, 84%, 1);
+  border-radius: 7px;
+  color: hsla(234, 22%, 37%, 1);
+}
+
+.task-btn:focus,
+.task-btn:hover {
+  background-color: #3770ed;
+  color: #fff;
+}
+
+.send-btn {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-btn:focus,
+.send-btn:hover {
+  background-color: #918e9b;
+  color: #fff;
+}
+
+.send-btn img {
+  width: 16px;
+  margin-right: 0.5rem;
+}
+
+.task-selector {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+/* .selected-task,
+.task-summary {
+  display: flex;
+} */
+
+.task-details p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  margin-block: 1rem;
+}
+
+.dollar-sign {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: right;
+  color: #918e9b;
+}
+
+p span {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 20px;
+  color: #918e9b;
+}
+
+.task,
+.notes {
+  margin-right: auto;
+}
+
+.task-summary {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #c3c6db;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.task-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-cost {
+  text-align: right;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 32px;
+  text-align: right;
+  color: #4a4e74;
+}
+
+@media (min-width: 560px) {
+  .task-selector {
+    flex-direction: row;
+  }
+}
